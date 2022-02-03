@@ -5,7 +5,7 @@ public class AlertImplementation: AlertFactoryService {
   
     weak var delegate: AlertActionDelegate?
     
-    func build(alertData: AlertViewData) -> UIViewController {
+    public func build(alertData: AlertViewData) -> UIViewController {
         let vc = UIAlertController(title: alertData.title, message: alertData.message, preferredStyle: alertData.style)
         if alertData.enableOkAction {
             let okAction = UIAlertAction(title: alertData.okActionTitle, style: alertData.okActionStyle) { _ in

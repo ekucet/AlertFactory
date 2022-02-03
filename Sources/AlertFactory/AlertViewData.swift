@@ -19,7 +19,7 @@ public struct AlertViewData {
     let cancelActionTitle: String
     let cancelActionStyle: UIAlertAction.Style
     
-    init(title: String,
+    public init(title: String,
          message: String,
          style: UIAlertController.Style = .alert,
          enableOkAction: Bool,
